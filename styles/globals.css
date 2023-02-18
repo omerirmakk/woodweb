@@ -1,0 +1,83 @@
+@import '../fonts/font/font.module.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+h1 {
+  font-family: 'kyivtype_sansmedium-';
+  font-size: 90px;
+  font-weight: 350;
+}
+p {
+  font-family: 'Inter', sans-serif;
+  font-size: 30px;
+}
+body {
+  background-image: url(../public/home_svg.png);
+  background-repeat: repeat;
+  background-size: 100%;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+.notfound {
+  color: white;
+  position: relative;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  z-index: -99;
+  background-image: url(../public/home_wood.png), url(../public/home_svg.png);
+  background-repeat: no-repeat, repeat;
+  background-size: 60%, 100%;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+}
+.error_svg {
+  position: absolute;
+  left: 20%;
+  top: 8%;
+}
+.error_title {
+  position: relative;
+  top: 65%;
+  text-decoration-line: line-through;
+  text-decoration-color: rgb(37, 8, 8);
+  text-shadow: -1px 0px 0px black, 1px 0px 0px black, 0px -1px 0px black;
+}
+.error_parag {
+  top: 68%;
+  position: relative;
+  color: hsla(28, 100%, 87%, 1);
+}
+.btn {
+  background-color: hsla(215, 26%, 56%, 1);
+  cursor: pointer;
+  z-index: 150;
+  color: hsla(0, 0%, 96%, 1);
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  padding: 7px 70px;
+  border-radius: 20px;
+  width: 28rem;
+  height: 3.5rem;
+}
+.btn:hover {
+  color: rgb(251, 196, 148);
+}
+.error_btn {
+  position: absolute;
+  left: 38%;
+  top: 88%;
+}

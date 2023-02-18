@@ -1,0 +1,36 @@
+@import '../fonts/font/font.module.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.navbar {
+  //font-family: 'kyivtype_sansmedium-';
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+}
+.second {
+  font-family: 'Inter', sans-serif;
+  font-size: 30px;
+}
+/* --------------- NAVBAR ----------------------------*/
+.nav_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  .logo {
+    margin-left: 5rem;
+  }
+
+  li {
+    list-style: none;
+    margin-right: 18rem;
+
+    a {
+      text-decoration: none;
+      color: white;
+      margin-right: 5rem;
+      &:hover {
+        color: hsla(216, 39%, 74%, 1);
+      }
+    }
+  }
+}
