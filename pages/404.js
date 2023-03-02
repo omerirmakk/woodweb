@@ -15,7 +15,7 @@ const NotFound = () => {
           Oh, you must be lost, there is no such page.
         </p>
       </div>
-      <Link href="./">
+      <Link href="./" passHref={true}>
         <Button className="btn error_btn">Go to the home page</Button>
       </Link>
     </Layout>
