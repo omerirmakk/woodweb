@@ -16,7 +16,7 @@ const NotFound = () => {
         </p>
       </div>
       <Link href="./" passHref={true}>
-        <Button className="btn error_btn">Go to the home page</Button>
+        <Button className="btn error_btn"> Go to the home page</Button>
       </Link>
     </Layout>
   );
