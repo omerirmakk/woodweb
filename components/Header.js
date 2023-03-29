@@ -5,10 +5,8 @@ import styles from './every.module.scss';
 import { useRef, useEffect } from 'react';
 
 const Header = () => {
-  // const myRef = useRef(null);
   const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.toLowerCase();
   let interval = null;
-
   useEffect(() => {
     const wordElement = document.querySelectorAll('.words');
 

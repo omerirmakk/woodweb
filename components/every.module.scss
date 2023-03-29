@@ -6,10 +6,14 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
 }
-.second {
+.layout_container {
+  height: auto;
+}
+.main_countainer {
   font-family: 'Inter', sans-serif;
   font-size: 30px;
 }
+
 /* --------------- NAVBAR ----------------------------*/
 .nav_flex {
   display: flex;
@@ -28,8 +32,15 @@
       text-decoration: none;
       color: white;
       margin-right: 5rem;
+      transition: all 0.9s;
       &:hover {
-        color: hsla(216, 39%, 74%, 1);
+        background-image: radial-gradient(
+          circle,
+          rgba(122, 129, 127, 1) 85%,
+          rgba(0, 0, 0, 1) 99%
+        );
+        color: transparent;
+        background-clip: text;
       }
     }
   }
@@ -47,10 +58,10 @@
     flex: 50%;
   }
   .homeTable_right_side {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     flex: 50%;
-    .card {
-      margin-left: 2rem;
-    }
   }
   .btnHome {
     width: 14rem;
@@ -58,21 +69,20 @@
     border-radius: 42px;
   }
 }
-.cardPhoto {
-  height: 12.5rem;
-  width: 12.5rem;
-  border-radius: 42px;
-  position: absolute;
 
-  &:nth-child(1) {
-    margin-left: 18rem;
-  }
-  &:nth-child(even) {
-    margin-left: 2.9rem;
-    margin-top: 19.75rem;
-  }
-  &:nth-child(3) {
-    margin-left: 18rem;
-    margin-top: 28.25rem;
-  }
+.title_transparent {
+  background-image: radial-gradient(
+    circle,
+    rgba(122, 129, 127, 1) 45%,
+    rgba(0, 0, 0, 1) 95%
+  );
+  color: transparent;
+  background-clip: text;
+}
+.footer_container {
+  width: 100%;
+  background-color: wheat;
+  height: 18.75rem;
+  position: relative;
+  bottom: 0;
 }

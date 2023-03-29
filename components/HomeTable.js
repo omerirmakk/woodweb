@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './every.module.scss';
 import Button from './Button';
-import CardPhoto from './CardPhoto';
 import Image from 'next/image';
 
 const HomeTable = () => {
@@ -9,9 +8,10 @@ const HomeTable = () => {
     <>
       <div className={styles.containerHome}>
         <div className={styles.homeTable_left_side}>
-          <h1>
+          <h1 className={styles.title_transparent}>
             SOLID <br></br> WOOD <br></br> PRODUCTS
           </h1>
+
           <p className="parag">
             Oak, beech, ash from <br></br> <strong>480 EURO </strong> per m
             <sup>3</sup>
@@ -20,15 +20,11 @@ const HomeTable = () => {
         </div>
         <hr className="homeTable-hr"></hr>
         <div className={styles.homeTable_right_side}>
-          <CardPhoto
-            srcPhoto="/home1.png"
-            className={styles.cardPhotos}
-          ></CardPhoto>
-          <CardPhoto srcPhoto="/home2.png" className={styles.card}></CardPhoto>
-          <CardPhoto
-            srcPhoto="/home3.png"
-            className={styles.cardPhotos}
-          ></CardPhoto>
+          <img src="/wood1.png"></img>
+
+          <img src="/wood2.png"></img>
+
+          <img src="/wood3.png"></img>
         </div>
       </div>
     </>
