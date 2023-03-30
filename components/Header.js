@@ -1,14 +1,14 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import styles from './every.module.scss';
-import { useRef, useEffect } from 'react';
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import styles from "./every.module.scss";
+import { useRef, useEffect } from "react";
 
 const Header = () => {
-  const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.toLowerCase();
+  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toLowerCase();
   let interval = null;
   useEffect(() => {
-    const wordElement = document.querySelectorAll('.words');
+    const wordElement = document.querySelectorAll(".words");
 
     for (let i = 0; i < wordElement.length; i++)
       wordElement[i].onmouseover = (event) => {
@@ -18,7 +18,7 @@ const Header = () => {
 
         interval = setInterval(() => {
           event.target.innerText = event.target.innerText
-            .split('')
+            .split("")
             .map((letter, index) => {
               if (index < iteration) {
                 return event.target.dataset.value[index];
@@ -26,7 +26,7 @@ const Header = () => {
 
               return letters[Math.floor(Math.random() * 26)];
             })
-            .join('');
+            .join("");
 
           if (iteration >= event.target.dataset.value.length) {
             clearInterval(interval);
