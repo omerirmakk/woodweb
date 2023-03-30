@@ -7,11 +7,13 @@
   font-size: 1.25rem;
 }
 .layout_container {
-  height: auto;
+  width: 100%;
 }
 .main_countainer {
   font-family: 'Inter', sans-serif;
   font-size: 30px;
+  position: relative;
+  height: max-content;
 }
 
 /* --------------- NAVBAR ----------------------------*/
@@ -85,4 +87,21 @@
   height: 18.75rem;
   position: relative;
   bottom: 0;
+}
+/* --- OUR WORK COMPONENT --- */
+.ourWork{
+  position: relative;
+  h1{
+    margin: 25rem 0 7rem 10rem;
+    text-transform: uppercase;
+  }
+  .ourWork__Image{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    left: auto;
+    justify-content: center;
+    margin-bottom: 10rem;
+    
+  }
 }
