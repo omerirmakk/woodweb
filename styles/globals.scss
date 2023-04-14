@@ -158,6 +158,8 @@ body {
       justify-content: center;
       & > span {
         text-align: left;
+        display: flex;
+        align-items: center;
         
       }
       span > * {
