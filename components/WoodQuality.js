@@ -8,7 +8,7 @@ const WoodQuality = () => {
       <div className="wood_maincountainer">
         <div className="wood_title">
           <h1>
-            THE WOOD WE <br></br> WORK WITH
+            THE WOOD WE <br /> WORK WITH
           </h1>
         </div>
         <div className="wood_photos">

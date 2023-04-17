@@ -75,7 +75,7 @@
 .title_transparent {
   background-image: radial-gradient(
     circle,
-    rgba(122, 129, 127, 1) 45%,
+    rgba(122, 129, 127, 1) 35%,
     rgba(0, 0, 0, 1) 95%
   );
   color: transparent;
@@ -102,6 +102,8 @@
     left: auto;
     justify-content: center;
     margin-bottom: 10rem;
+    width: 75%;
+    margin: 0 auto;
     
   }
 }
