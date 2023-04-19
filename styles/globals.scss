@@ -1,6 +1,8 @@
 @import '../fonts/font/font.module.css';
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 $font-gold-color: hsla(28, 100%, 87%, 1);
+$p-main-color: #F5F5F5;
+
 
 * {
   box-sizing: border-box;
@@ -113,7 +115,8 @@ body {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 30px;
-
+  border-radius: 42px;
+  padding: 7px 70px;
 }
 
 .btn:hover {
@@ -123,8 +126,6 @@ body {
   position: absolute;
   left: 38%;
   top: 88%;
-  padding: 7px 70px;
-  border-radius: 20px;
   width: 28rem;
   height: 3.5rem;
 }
@@ -135,6 +136,7 @@ body {
   flex-direction: column;
   width: 100%;
   height: 550px;
+  color: $p-main-color;
 
   .wood_title {
     margin-left: 14rem;
@@ -184,6 +186,12 @@ body {
   justify-content: space-around;
   margin-bottom: 2rem;
  
+}
+.advantages_maindiv{
+  margin-top: 280px;
+}
+.aboutus_maindiv{
+  margin-top: 280px;
 }
 
 .hidden{
