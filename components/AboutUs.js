@@ -10,9 +10,9 @@ export default function AboutUs() {
           </p>
         </div>
         <div>
-          <Image></Image>
-          <Image></Image>
-          <Image></Image>
+          <Image alt="woodphoto"></Image>
+          <Image alt="woodphoto"></Image>
+          <Image alt="woodphoto"></Image>
         </div>
       </div>
     </>

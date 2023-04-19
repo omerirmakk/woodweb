@@ -1,4 +1,3 @@
-import React from "react";
 import { FiCheck } from "react-icons/fi";
 import { HiX } from "react-icons/hi";
 
@@ -12,9 +11,9 @@ const WoodQuality = () => {
           </h1>
         </div>
         <div className="wood_photos">
-          <img src="/wood1.png"></img>
-          <img src="/wood2.png"></img>
-          <img src="/wood3.png"></img>
+          <img alt="woodphoto" src="/wood1.png"></img>
+          <img alt="woodphoto" src="/wood2.png"></img>
+          <img alt="woodphoto" src="/wood3.png"></img>
         </div>
         <div className="photo-unit__titles">
           <div>Oak</div>

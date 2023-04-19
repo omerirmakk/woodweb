@@ -1,10 +1,7 @@
-import React from "react";
-import Head from "next/head";
-import Image from "next/image";
-import OurWork from "@/components/OurWork";
 import HomeTable from "@/components/HomeTable";
-import Footer from "@/components/Footer";
+import OurWork from "@/components/OurWork";
 import WoodQuality from "@/components/WoodQuality";
+import Head from "next/head";
 
 const Home = () => {
   return (

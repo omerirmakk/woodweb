@@ -1,7 +1,6 @@
-import React from "react";
-import styles from "./every.module.scss";
-import Button from "./Button";
 import Image from "next/image";
+import Button from "./Button";
+import styles from "./every.module.scss";
 
 const HomeTable = () => {
   return (
@@ -21,9 +20,24 @@ const HomeTable = () => {
         <hr className="homeTable-hr"></hr>
         <div className={styles.homeTable_right_side}>
           <div className="right-side-container">
-            <Image width={205} height={205} src="/home3.png"></Image>
-            <Image width={205} height={205} src="/home2.png"></Image>
-            <Image width={205} height={205} src="/home1.png"></Image>
+            <Image
+              width={205}
+              height={205}
+              src="/home3.png"
+              alt="woodphoto"
+            ></Image>
+            <Image
+              width={205}
+              height={205}
+              src="/home2.png"
+              alt="woodphoto"
+            ></Image>
+            <Image
+              width={205}
+              height={205}
+              src="/home1.png"
+              alt="woodphoto"
+            ></Image>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
-import Button from "./Button";
 import Image from "next/image";
+import Button from "./Button";
 export default function AnyQuestions() {
   return (
     <>
@@ -15,7 +15,7 @@ export default function AnyQuestions() {
         </div>
         <div>
           <p>Write lorem ipsum asdasdasdasd</p>
-          <Image></Image>
+          <Image alt="woodphoto"></Image>
         </div>
       </div>
     </>

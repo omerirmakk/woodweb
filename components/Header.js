@@ -1,8 +1,7 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
 import styles from "./every.module.scss";
-import { useRef, useEffect } from "react";
 
 const Header = () => {
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toLowerCase();
@@ -46,6 +45,7 @@ const Header = () => {
             src="/Logo.png"
             width={197}
             height={84}
+            alt="woodphoto"
           />
         </Link>
         <div>

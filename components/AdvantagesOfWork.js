@@ -5,7 +5,7 @@ export default function AdvantagesOfWork() {
     <>
       <h1>ADVANTAGES WORKING WITH US</h1>
       <div>
-        <Image></Image>
+        <Image alt="woodphoto"></Image>
         <p>lorem ipsum dolor</p>
         <p>lorem ipsum dolor</p>
         <p>lorem ipsum dolor</p>
