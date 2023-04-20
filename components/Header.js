@@ -1,10 +1,13 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 import styles from "./every.module.scss";
-import { useRef, useEffect } from "react";
 
 const Header = () => {
+  const router = useRouter();
+  const currentRoute = router.pathname;
+
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toLowerCase();
   let interval = null;
   useEffect(() => {
@@ -39,31 +42,53 @@ const Header = () => {
 
   return (
     <>
-      <div className={styles.nav_flex}>
+      <div
+        className={
+          currentRoute === "/" ? styles.nav_flex : styles.nav_flex_active
+        }
+      >
         <Link href="/">
           <Image
             className={styles.logo}
             src="/Logo.png"
             width={197}
             height={84}
+            alt="woodphoto"
           />
         </Link>
         <div>
           <li>
-            <Link href="./gallery" data-value="Gallery" className="words">
+            <Link
+              href="./gallery"
+              data-value="Gallery"
+              class="words"
+              className={currentRoute === "/gallery" ? styles.active : ""}
+            >
               Gallery
             </Link>
+
             <Link
               href="./price"
-              className="words"
+              class="words"
+              className={currentRoute === "/price" ? styles.active : ""}
               data-value="Prices for services"
             >
               Prices for services
             </Link>
-            <Link href="./about" className="words" data-value="About us">
+            <Link
+              href="./about"
+              class="words"
+              className={currentRoute === "/about" ? styles.active : ""}
+              data-value="About us"
+            >
               About us
             </Link>
-            <Link href="./contact" className="words" data-value="Contact">
+            <Link
+              href="./contact"
+              class="words"
+              className={currentRoute === "/contact" ? styles.active : ""}
+              data-value="Contact"
+            >
               Contact
             </Link>
           </li>

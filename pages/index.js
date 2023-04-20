@@ -1,10 +1,11 @@
-import React from "react";
-import Head from "next/head";
-import Image from "next/image";
-import OurWork from "@/components/OurWork";
+import AboutUs from "@/components/AboutUs";
+import AdvantagesOfWork from "@/components/AdvantagesOfWork";
+import AnyQuestions from "@/components/AnyQuestions";
 import HomeTable from "@/components/HomeTable";
-import Footer from "@/components/Footer";
+import OurWork from "@/components/OurWork";
 import WoodQuality from "@/components/WoodQuality";
+import Head from "next/head";
+import Footer from "@/components/Footer";
 
 const Home = () => {
   return (
@@ -19,7 +20,16 @@ const Home = () => {
         </div>
         <WoodQuality />
         <OurWork />
-        {/*  <Footer /> */}
+        <div className="advantages_maindiv">
+          <AdvantagesOfWork />
+        </div>
+        <div className="aboutus_maindiv">
+          <AboutUs />
+        </div>
+        <div className="anyquestions_maindiv">
+          <AnyQuestions />
+        </div>
+        <Footer />
       </div>
     </>
   );

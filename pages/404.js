@@ -1,7 +1,6 @@
-import React from "react";
 import Image from "next/image";
-import Button from "../components/Button";
 import Link from "next/link";
+import Button from "../components/Button";
 
 const NotFound = () => {
   return (
@@ -13,10 +12,10 @@ const NotFound = () => {
         <p className="error_parag">
           Oh, you must be lost, there is no such a page.
         </p>
+        <Link href="./" passHref={true}>
+          <Button className="btn error_btn"> Go to the home page</Button>
+        </Link>
       </div>
-      <Link href="./" passHref={true}>
-        <Button className="btn error_btn"> Go to the home page</Button>
-      </Link>
     </>
   );
 };

@@ -1,5 +1,10 @@
 @import '../fonts/font/font.module.css';
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+$font-gold-color: hsla(28, 100%, 87%, 1);
+$p-main-color: #F5F5F5;
+$main-hover-color:  #D5DCEE;
+
+
 
 .navbar {
   //font-family: 'kyivtype_sansmedium-';
@@ -17,13 +22,28 @@
 }
 
 /* --------------- NAVBAR ----------------------------*/
-.nav_flex {
+.nav_flex_active{
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
+  background-color: #1E0C06;
+  border-bottom-left-radius: 42px;
+  border-bottom-right-radius: 42px;
+  -webkit-box-shadow: 0px 8px 35px 4px rgba(177,173,179,0.75);
+-moz-box-shadow: 0px 8px 35px 4px rgba(177,173,179,0.75);
+box-shadow: 0px 8px 35px 4px rgba(177,173,179,0.75);
+  width: 98.7%;
+  height: 24.5%;
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
   .logo {
     margin-left: 5rem;
+  }
+ 
+  .active{
+    color: #728BAD;
   }
 
   li {
@@ -40,6 +60,40 @@
           circle,
           rgba(122, 129, 127, 1) 85%,
           rgba(0, 0, 0, 1) 99%
+        );
+        color: transparent;
+        background-clip: text;
+      }
+    }
+  }
+}
+.nav_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  .logo {
+    margin-left: 5rem;
+  }
+ 
+  .active{
+    color: #728BAD;
+  }
+
+  li {
+    list-style: none;
+    margin-right: 18rem;
+
+    a {
+      text-decoration: none;
+      color: white;
+      margin-right: 5rem;
+      transition: all 0.9s;
+      &:hover {
+        background-image: radial-gradient(
+          circle,
+          rgb(122, 129, 127) 99%,
+          rgb(0, 0, 0) 99%
         );
         color: transparent;
         background-clip: text;
@@ -75,19 +129,13 @@
 .title_transparent {
   background-image: radial-gradient(
     circle,
-    rgba(122, 129, 127, 1) 45%,
+    rgba(122, 129, 127, 1) 35%,
     rgba(0, 0, 0, 1) 95%
   );
   color: transparent;
   background-clip: text;
 }
-.footer_container {
-  width: 100%;
-  background-color: wheat;
-  height: 18.75rem;
-  position: relative;
-  bottom: 0;
-}
+
 /* --- OUR WORK COMPONENT --- */
 .ourWork{
   position: relative;
@@ -102,6 +150,223 @@
     left: auto;
     justify-content: center;
     margin-bottom: 10rem;
+    width: 75%;
+    margin: 0 auto;
     
+    > * > * {
+      border-radius: 80px;
+    }
+  }
+}
+/* --- ADVANTAGES OF WORK WITH US --- */
+.advantages_container{
+  position: relative;
+  height: 58rem;
+  width: 75rem;
+  margin: 0 auto;
+  Button{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 80px;
+  }
+  h1{
+  text-align: left;
+  margin-left: 130px;
+  }
+  
+  >  div {
+    display: flex;
+    margin-top: 120px;
+    justify-content:space-around;
+    align-items: center;
+    > div {
+      height: 30rem;
+      margin-left: 7rem;
+      display: flex;
+      flex-direction: column;
+      justify-content:space-evenly;
+      align-items:flex-start;
+      color: $p-main-color;
+    }
+  }
+};
+/* --- ABOUT US COMP --- */
+.aboutus_container{
+  background-color: #1e0c06a2;
+  width: 1325px;
+  border-radius: 40px;
+  height: 775px;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-top: 5rem;
+    > p {
+      margin-top: 67px;
+      width: 32rem;
+      color: $p-main-color;
+      line-height: 40px;
+
+    }
+  }
+  > div:nth-child(2){
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    right: 0;
+    > * {
+      border-radius: 40px;
+      border: 10px solid #1E0C06;
+      &:nth-child(1)
+      {
+        position: absolute;
+        right: -5rem;
+        top: 5rem;
+      }
+      &:nth-child(2)
+      {
+        z-index: 999;
+        position: absolute;
+        top: 12rem;
+      }
+      &:nth-child(3)
+      {
+        position: absolute;
+        bottom: 2rem;
+        right: -3rem;
+
+      }
+    }
+  }
+}
+/* --- ANY QUESTIONS COMP --- */
+.anyquestions_container{
+  margin-top: 10rem;
+  text-align: right;
+  padding-right: 100px;
+
+  > div{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    > div:nth-child(1){
+      width: 29rem;
+      > form
+      {
+        
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        margin-left: 6rem;
+        > input,textarea{
+          width: 600px;
+          height: 75px;
+          background-color: transparent;
+          border: 4px solid #728BAD;
+          border-radius: 40px;
+          margin-top: 2rem;
+          padding-left: 35px;
+          color: #D9D9D9;
+          font-size: 30px;
+          font-weight: 600;
+          &:focus{
+            background-color: $main-hover-color;
+           color: black;
+           outline-color: #8E3921;
+           ;
+           border: none;
+          }
+          &:nth-child(3){
+            height: 250px;
+            
+          }
+        }
+        > Button{
+          width: 215px;
+          margin-top: 4rem;
+        }
+      }
+      }
+      > div:nth-child(2){
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      right: 8rem;
+      > p {
+        color: $p-main-color;
+        width: 540px;
+      
+      }
+      > Image{
+        position: absolute;
+        top: 100px;
+      
+      }
+    }
+  }
+}
+
+/* CONTACT COMP */
+.contact_container{
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  margin: 0 auto;
+  align-items: flex-start;
+  color: $p-main-color;
+  .contact_infos{
+    display: flex;
+    height: 26rem;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: flex-start;
+    margin-right: 5rem;
+  }
+  /*  PRICE LIST COMP */
+}
+.priceList_container{
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+ 
+  width: 55%;
+  margin: 0 auto;
+  
+  > * > * {
+    border-radius: 25px;
+  }
+
+}
+/* FOOTER COMP  */
+.footer_container {
+  width: 100%;
+  margin-top: 10rem;
+  background-color: #222021;
+  height: 18.75rem;
+  position: relative;
+  bottom: 0;
+  color: $p-main-color;
+  -webkit-box-shadow: 0px -9px 150px -1px rgba(177,173,179,0.75);
+-moz-box-shadow: 0px -9px 150px -1px rgba(177,173,179,0.75);
+box-shadow: 0px -9px 150px -1px rgba(177,173,179,0.75);
+  
+  > div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
   }
 }
