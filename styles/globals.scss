@@ -12,8 +12,21 @@ $p-main-color: #F5F5F5;
 
 html,
 body {
-  
   color: white;
+ 
+  ::-webkit-scrollbar {
+    width: 7px;
+ }
+  ::-webkit-scrollbar-track {
+    background: black; 
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background: $p-main-color; 
+  }
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 }
 h1 {
   font-family: 'kyivtype_sansmedium-';
@@ -116,11 +129,20 @@ body {
   font-weight: 700;
   font-size: 30px;
   border-radius: 42px;
+  transition: ease-in-out .3s;
   padding: 7px 70px;
+  border: none;
+}
+.btn:active{
+  transform: translateY(2px);
 }
 
 .btn:hover {
-  color: $font-gold-color;
+ 
+  background: #D5DCEE;
+  color: #8E3921;
+
+
 }
 .error_btn {
   position: absolute;
@@ -194,9 +216,32 @@ body {
   margin-top: 280px;
 }
 
+
 .hidden{
   display: none ;
 }
 .visible{
   display: block;
+}
+
+/* ----- GALLERY PAGE CONTAINERS -------*/
+
+.gallery_wood_container{
+    margin-top: 7rem;
+}
+.gallery_anyquestion_container{
+  margin-top: 30rem;
+
+}
+/* ----- ABOUT US PAGE CONTAINERS -------*/
+
+.aboutus_main_container{
+  margin-top: 20rem;
+
+}
+/* ----- CONTACT PAGE CONTAINERS -------*/
+
+.contact_container{
+  margin-top: 15rem ;
+  
 }

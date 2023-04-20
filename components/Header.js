@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useEffect } from "react";
 import styles from "./every.module.scss";
-import { useRouter } from "next/router";
 
 const Header = () => {
   const router = useRouter();

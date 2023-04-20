@@ -11,7 +11,7 @@ export default function AnyQuestions() {
             <form>
               <input type="text" placeholder="Your name"></input>
               <input type="text" placeholder="Your telephone number"></input>
-              <input type="text" placeholder="Your question"></input>
+              <textarea type="textarea" placeholder="Your question"></textarea>
               <Button type="submit">Send</Button>
             </form>
           </div>
