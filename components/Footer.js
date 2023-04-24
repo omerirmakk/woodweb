@@ -2,6 +2,7 @@ import Image from "next/image";
 import { BiPhoneCall } from "react-icons/bi";
 import { CiLocationOn } from "react-icons/ci";
 import styles from "./every.module.scss";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -9,12 +10,14 @@ const Footer = () => {
       <div className={styles.footer_container}>
         <div>
           <div className={styles.footer_logo}>
-            <Image
-              alt="woodphoto"
-              src="/Logo.png"
-              width={197}
-              height={84}
-            ></Image>
+            <Link href="/">
+              <Image
+                alt="woodphoto"
+                src="/Logo.png"
+                width={197}
+                height={84}
+              ></Image>
+            </Link>
           </div>
           <div
             style={{ display: "flex", alignItems: "center" }}

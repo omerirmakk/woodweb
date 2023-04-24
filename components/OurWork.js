@@ -9,7 +9,7 @@ export default function OurWork() {
       <div className={styles.ourWork}>
         <h1>Our Work</h1>
         <div className={styles.ourWork__Image}>
-          <Carousel className="carousel">
+          <Carousel showThumbs={false} className="carousel">
             <Image
               width={800}
               height={550}
