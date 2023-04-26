@@ -1,5 +1,5 @@
-import Header from './Header';
-import styles from './every.module.scss';
+import Header from "./Header";
+import styles from "./every.module.scss";
 
 const Layout = ({ children }) => {
   return (
